@@ -1,4 +1,4 @@
 by Raymond Romero
 Computer Science
 
-Practising with Git Hub
+Practicing with Git Hub
