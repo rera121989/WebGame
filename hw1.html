@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8">
+	<title>Homework 1</title>
+	<style type="text/css">
+		
+		input,td{
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			color: white;
+		}
+		body{
+			margin-top: 30px;
+			margin-left: 30px;
+		}
+		button{
+			margin-top: 10px;
+			margin-left:5px;
+		}
+        #Dpad{
+            margin-left: 100px;
+            margin-top: 20px;
+
+        }
+    </style>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src = "code.js"></script>
+    <script >
+
+        
+    </script>
+
+
+</head>
+<body>
+
+	<div class = "wrapper">
+		
+		<h1>Text Adventure Game</h1>
+
+
+		<table border="1" style="float: left; >
+
+			<tr id = "table">
+                <td id="00"></td>
+                <td id="01"></td>
+                <td id="02"></td>
+                <td id="03"></td>
+                <td id="04"></td>
+                <td id="05"></td>
+                <td id="06"></td>
+                <td id="07"></td>
+            </tr>
+            <tr id = "table">
+                <td id="10"></td>
+                <td id="11"></td>
+                <td id="12"></td>
+                <td id="13"></td>
+                <td id="14"></td>
+                <td id="15"></td>
+                <td id="16"></td>
+                <td id="17"></td>
+            </tr>
+            <tr id = "table">
+                <td id="20"></td>
+                <td id="21"></td>
+                <td id="22"></td>
+                <td id="23"></td>
+                <td id="24"></td>
+                <td id="25"></td>
+                <td id="26"></td>
+                <td id="27"></td>
+            </tr>
+            <tr id = "table">
+                <td id="30"></td>
+                <td id="31"></td>
+                <td class = "name" id="32">C</td>
+                <td id="33"></td>
+                <td id="34"></td>
+                <td id="35"></td>
+                <td id="36"></td>
+                <td id="37"></td>
+            </tr>
+            <tr id = "table">
+                <td id="40"></td>
+                <td id="41"></td>
+                <td id="42"></td>
+                <td class = "name" id="43">C</td>
+                <td id="44"></td>
+                <td id="45"></td>
+                <td class = "name" id="46">W</td>
+                <td id="47"></td>
+            </tr>
+            <tr id = "table">
+                <td id="50"></td>
+                <td id="51"></td>
+                <td id="52"></td>
+                <td class = "name"id="53">W</td>
+                <td id="54"></td>
+                <td id="55"></td>
+                <td class = "name" id="56">C</td>
+                <td id="57"></td>
+            </tr>
+            <tr>
+                <td class = "name" id="60">W</td>
+                <td id="61"></td>
+                <td id="62"></td>
+                <td id="63"></td>
+                <td id="64"></td>
+                <td id="65"></td>
+                <td id="66"></td>
+                <td class = "name" id="67">C</td>
+            </tr>
+            <tr>
+                <td class = "name" id="70">E</td>
+                <td id="71"></td>
+                <td id="72"></td>
+                <td id="73"></td>
+                <td id="74"></td>
+                <td id="75"></td>
+                <td class = "name" id="76"> <img src="http://t2.ftcdn.net/jpg/00/42/85/11/110_F_42851187_8drNwFO5rtc0LxhDqg7dkqIf0PBwIOkH.jpg" ></td>
+                <td id="77"></td>
+            </tr>
+        </table>
+
+
+
+    <div class="panel" style="margin: 10px;float: left; margin-right: 400px;">
+        <h1>Directions</h1>
+        <p style="width: 800px;">
+        This text Adventure Game deals with moving around the grid looking for the exit door and finding either prizes (W) or monsters (C) to fight. You start off with 100 points and either goes down if you lose to a monster or goes up if you find prizes. The Objective is to find the exit key. Player loses if score reaches zero. The game also can end if the player is able to find the exit.</p>
+
+    </div>
+
+    <div class="Dpad" >
+        
+
+          <button id = "start" enable = "true" onclick="but();">Start</button>
+          <button onclick="window.location.reload();">Clear</button>
+          <button id  = "quit" onclick="showAllCells();" disabled="true">Quit</button>
+
+         
+          <table id = "Dpad">
+            <tr>
+                <th></th>
+                <th><button id = "up" onclick="up();">Up</button></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th><button id = "left" onclick="left();">Left</button></th>
+                <th></th>
+                <th><button id = "right" onclick="right();">Right</button></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th><button id = "down" onclick="down();">Down</button></th>
+                <th></th>
+            </tr>
+        </table>
+
+        <h4 style="margin: 20px;">Score : 100pts</h4>   
+    </div>
+</body>
+</html>
