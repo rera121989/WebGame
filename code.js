@@ -102,7 +102,7 @@ function down(){
 		var num = x.concat(rw);
 		this.row = rw;
 		this.col = x;
-		document.getElementById(num).hidden = "false";
+		document.getElementById(num).style.background = "lightblue";
 		document.getElementById(num).style.color = "black";
 
 		stage(num);
